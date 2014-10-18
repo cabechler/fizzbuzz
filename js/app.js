@@ -5,8 +5,8 @@ $(document).ready(function() {
 $(".number").keypress(function(e) {
 		if (e.which == 13) {
 			var input = $("input[name=number]").val();
+			e.preventDefault();
 			var i;
-
 
 //loop 1-100
 			for (var i = 1; i <= input && i <= 100; i++) {
